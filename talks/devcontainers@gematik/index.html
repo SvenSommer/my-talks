@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>{{TITLE}}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/a11y-light.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500|Work+Sans:400,700">
+    <link rel="stylesheet" href="../static/slides.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="heading-only">
+                <h1 style="font-size:80px;  width: 100%;">{{TITLE}}</h1>
+
+                <img src="https://code.visualstudio.com/assets/docs/languages/python/python-editing.gif"
+                    alt="Animated GIF of autocomplete in Python code in VS Code" height="200">
+                <img src="https://code.visualstudio.com/assets/docs/python/testing/test-results.png"
+                    alt="Screenshot of Python tests in VS Code testing tab" height="200">
+                <div class="no-print" style="display: none; text-align: left; margin-top: 100px; font-size: 70%;">
+                    Tips for navigating the slides:
+                    <ul>
+                        <li>Press O or Escape for overview mode.</li>
+                        <li>Visit <a href="?print-pdf" target="_blank">this link</a> for a nice printable version</li>
+                        <li>Press the copy icon on the upper right of code blocks to copy the code</li>
+                    </ul>
+                </div>
+
+                <aside class="speaker-notes">
+                </aside>
+            </section>
+            <section>
+                <h2>Was können devcontainer?</h2>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js"></script>
+    <script>
+        Reveal.initialize({
+            width: 1280,
+            height: 720,
+            hash: true,
+            center: false,
+            slideNumber: true,
+            showNotes: false,
+            margin: 0.1,
+            preloadIframes: true,
+            autoPlayMedia: true,
+            plugins: [RevealHighlight, RevealMenu],
+            pdfSeparateFragments: true
+        });
+        window.highlightJsBadge();
+    </script>
+</body>
+
+</html>
