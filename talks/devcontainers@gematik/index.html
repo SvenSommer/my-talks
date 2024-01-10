@@ -18,8 +18,8 @@
     <div class="reveal">
         <div class="slides">
             <section class="heading-only">
-                <h1 style="font-size:80px;  width: 100%;">Vorteile von VSCode DevContainers gegenüber DevBoxen</h1>
-
+                <h1 style="font-size:80px;  width: 100%;">Vorteile von VSCode DevContainer gegenüber DevBoxen</h1>
+                <img src="intro.png" alt="Technologie Meme" width="50%">
                 <p>Eine Gegenüberstellung</p>
                 <p>Robert Hoffmann, 11.01.2024</p>
                 <div class="no-print" style="display: none; text-align: left; margin-top: 100px; font-size: 70%;">
@@ -37,11 +37,14 @@
             <!-- Folie 1: Einführung -->
             <section>
                 <h3>Einführung</h3>
-                <ul>
-                    <li><b>Thema: </b>Notwendigkeit und Vorteile der Einführung von .devcontainern in der Gematik</li>
-                    <li><b>Ziel: </b>Entscheidungsträger von der Bedeutung vorbereiteter Entwicklungsumgebungen zu überzeugen.
-                    </li>
-                </ul>
+                <div style="display: flex;">
+                    <div style="flex: 1; margin-left: 20px;">
+                        <ul>
+                            <li><b>Thema: </b>Notwendigkeit und Vorteile der Einführung von .devcontainern in der Gematik</li>
+                            <li><b>Ziel: </b>Entscheidungsträger von der Bedeutung vorbereiteter Entwicklungsumgebungen zu überzeugen.</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
             <section>
                 <h3>Agenda</h3>
@@ -49,6 +52,7 @@
                     <li>Vergleich des Aufbaus</li>
                     <li>Vergleich des Nutzerkreises</li>
                     <li>Weitere Vorteile von DevContainern</li>
+                    <li>Beispiele in der Gematik</li>
                     <li>Schlussfolgerung</li>
 
                 </ul>
@@ -188,7 +192,7 @@
                 <div style="display: flex;">
                     <div style="flex: 1;">
                         <!-- Hier können Sie das Logo von DevContainern einfügen -->
-                        <img src="devcontainer_logo.png" alt="DevContainer Logo" width="100%">
+                        <img src="intro2.png" alt="DevContainer Logo" width="100%">
                     </div>
                     <div style="flex: 1; margin-left: 20px;">
                         <ul>
@@ -205,6 +209,32 @@
                     DevContainer bieten eine Vielzahl von Vorteilen, darunter vereinfachtes Netzwerksetup, Flexibilität, breite Auswahlmöglichkeiten, benutzerfreundliches Interface, einheitliche Entwicklungsumgebungen und eine verbesserte Integration mit GitHub.
                 </p>
             </section>
+            <section>
+                <h2>Beispiele für die Verwendung von DevContainern bei Gematik</h2>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                   
+                    <div style="flex: 1;">
+                        <a href="https://github.com/SvenSommer/poc-epa-medication">Proof of Concept: ePA Medikationsprozess</a>
+                        <ul>
+                            <li>Einsatz eines Python+Postgres-Images</li>
+                            <li>VSCode-Extensions zur Konfiguration der Entwicklungsumgebung</li>
+                            <li>Automatisches Einrichten der Datenbank und Starten der Dienste</li>
+                        </ul>
+                        <p><b>Fazit:</b> POC kann von jedem Entwickler mit einem Klick gestartet werden, was eine hohe Effizienz und Benutzerfreundlichkeit gewährleistet.</p>
+                    </div>
+                    <div style="flex: 1; margin-left: 20px;">
+                        <a href="https://github.com/gematik/spec-epa-medication">Spezifikation: ePA FHIR Profile</a>
+                        <ul>
+                            <li>DevContainer ermöglichte eine vereinfachte Kooperation mit Partner "Gefyra"</li>
+                            <li>Einheitliche Einrichtung der FHIR-Validierungspipeline in "Ready to Run"-Zustand:</li>
+                            <li>Konsistente Konfiguration und Versionierung der Tools</li>
+                        </ul>
+                        <p><b>Fazit:</b> Enorme Zeiteinsparung und vereinfachte Kooperation durch standardisierte und vorbereitete Entwicklungs-Tools.</p>
+                    </div>
+                </div>
+            </section>
+            
+            
             
             <section>
                 <h2>Schlussfolgerung</h2>
