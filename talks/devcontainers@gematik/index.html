@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>{{TITLE}}</title>
+    <title>Devcontainer@Gematik</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/simple.css" id="theme">
@@ -18,12 +18,10 @@
     <div class="reveal">
         <div class="slides">
             <section class="heading-only">
-                <h1 style="font-size:80px;  width: 100%;">{{TITLE}}</h1>
+                <h1 style="font-size:80px;  width: 100%;">Vorteile von VSCode DevContainers gegenüber DevBoxen</h1>
 
-                <img src="https://code.visualstudio.com/assets/docs/languages/python/python-editing.gif"
-                    alt="Animated GIF of autocomplete in Python code in VS Code" height="200">
-                <img src="https://code.visualstudio.com/assets/docs/python/testing/test-results.png"
-                    alt="Screenshot of Python tests in VS Code testing tab" height="200">
+                <p>Eine Gegenüberstellung</p>
+                <p>Robert Hoffmann, 11.01.2024</p>
                 <div class="no-print" style="display: none; text-align: left; margin-top: 100px; font-size: 70%;">
                     Tips for navigating the slides:
                     <ul>
@@ -36,9 +34,81 @@
                 <aside class="speaker-notes">
                 </aside>
             </section>
+            <!-- Folie 1: Einführung -->
             <section>
-                <h2>Was können devcontainer?</h2>
+                <h2>Einführung</h2>
+                <ul>
+                    <li>Thema: Notwendigkeit und Vorteile der Einführung von .devcontainern in der Gematik</li>
+                    <li>Ziel: Entscheidungsträger von der Bedeutung vorbereiteter Entwicklungsumgebungen zu überzeugen.</li>
+                </ul>
             </section>
+
+            <!-- Folie 2: Aktuelle Probleme mit DevBox -->
+            <section>
+                <h2>Aktuelle Probleme mit DevBox</h2>
+                <ul>
+                    <li>Netzwerksetup: Kompliziert, erfordert Workarounds, funktioniert nur im VPN.</li>
+                    <li>Vielfalt der DevBoxen: Fehlende Konsistenz, mangelnde Tools.</li>
+                    <li>Stabilitätsprobleme: Abstürze beim Filesharing mit lokalem Windows-Ordner.</li>
+                </ul>
+            </section>
+
+            <!-- Folie 3: Vorteile von .devcontainer -->
+            <section>
+                <h2>Vorteile von .devcontainer</h2>
+                <ul>
+                    <li>Spezialisierte Konfiguration: Perfekt abgestimmtes Setup für spezifische Anwendungsfälle.</li>
+                    <li>Einfache Handhabung: Reduzierter Konfigurationsaufwand für Nutzer.</li>
+                    <li>Zentrales Management: Vereinheitlichung der Tool-Versionen und Workflows.</li>
+                </ul>
+            </section>
+
+            <!-- Folie 4: Effizienzsteigerung -->
+            <section>
+                <h2>Effizienzsteigerung</h2>
+                <ul>
+                    <li>Ende des "Doesn't work on my machine"-Problems: Vereinheitlichte Entwicklungsumgebung.</li>
+                    <li>Schnellere Integration mit GitHub: Niedrigere Einstiegshürden, erleichtert rasche Änderungen.
+                    </li>
+                    <li>Nutzerfreundlichkeit: Vereinfacht die Arbeit für weniger technisch versierte Kollegen.</li>
+                </ul>
+            </section>
+
+            <!-- Folie 5: Ressourcennutzung und Fachwissen -->
+            <section>
+                <h2>Ressourcennutzung und Fachwissen</h2>
+                <ul>
+                    <li>Individualisierte DevBoxen: Binden viele Ressourcen und verlangen spezielles IT-Wissen.</li>
+                    <li>Zentralisierung der Konfiguration: Effizientere Ressourcennutzung und geringerer Wissensbedarf.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Folie 6: Zentrale Konfiguration und Wartung -->
+            <section>
+                <h2>Zentrale Konfiguration und Wartung</h2>
+                <ul>
+                    <li>Einheitliche Konfiguration: Alle Änderungen und Updates zentral verwaltet.</li>
+                    <li>Vorteil für alle Nutzer: Kein Nutzer wird mit veralteten Tools zurückgelassen.</li>
+                </ul>
+            </section>
+
+            <!-- Folie 7: Schlussfolgerung -->
+            <section>
+                <h2>Abschluss und Ausblick</h2>
+                <p>Die Einführung von .devcontainer stellt eine entscheidende Verbesserung unserer Entwicklungsprozesse dar, indem sie Effizienz und Agilität in den Vordergrund stellt.</p>
+                <ul>
+                    <li>Die Herausforderungen mit der aktuellen DevBox zeigen die Notwendigkeit für eine vereinheitlichte, nutzerfreundliche Lösung.</li>
+                    <li>.devcontainer bietet eine zukunftsorientierte Entwicklungsumgebung, die Effizienz und Produktivität steigert.</li>
+                    <li>Wir stehen vor der Gelegenheit, unsere technologische Landschaft zu modernisieren und unsere Teamdynamik zu verbessern.</li>
+                    <li>Ich lade alle Entscheidungsträger ein, sich dieser innovativen Veränderung anzuschließen und sie aktiv zu unterstützen.</li>
+                </ul>
+                <aside class="speaker-notes">
+                    Heben Sie die Bedeutung der Einführung von .devcontainer hervor und wie sie die Arbeitsweise in der Gematik revolutionieren kann. Betonen Sie die Dringlichkeit und den Nutzen dieser Veränderung für das gesamte Team.
+                </aside>
+            </section>
+
+
         </div>
     </div>
 
