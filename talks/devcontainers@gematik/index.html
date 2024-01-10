@@ -19,7 +19,7 @@
         <div class="slides">
             <section class="heading-only">
                 <h1 style="font-size:80px;  width: 100%;">Vorteile von VSCode DevContainer gegenüber DevBoxen</h1>
-                <img src="intro.png" alt="Technologie Meme" width="50%">
+                <img src="intro.png" alt="Technologie Meme" height="300">
                 <p>Eine Gegenüberstellung</p>
                 <p>Robert Hoffmann, 11.01.2024</p>
                 <div class="no-print" style="display: none; text-align: left; margin-top: 100px; font-size: 70%;">
@@ -48,31 +48,34 @@
             </section>
             <section>
                 <h3>Agenda</h3>
-                <ul>
-                    <li>Vergleich des Aufbaus</li>
-                    <li>Vergleich des Nutzerkreises</li>
-                    <li>Weitere Vorteile von DevContainern</li>
-                    <li>Beispiele in der Gematik</li>
-                    <li>Schlussfolgerung</li>
+                <div style="font-size:0.75em; margin-top:0px; flex: 1; margin-left: 20px;">
+                    <ul>
+                        <li>Vergleich des Aufbaus</li>
+                        <li>Vergleich des Nutzerkreises</li>
+                        <li>Weitere Vorteile von DevContainern</li>
+                        <li>Beispiele in der Gematik</li>
+                        <li>Schlussfolgerung</li>
 
-                </ul>
+                    </ul>
+                </div>
             </section>
             <section>
                 <h3>Aufbau und Konsequenzen der DevBox-Architektur</h3>
                 <div style="display: flex;">
                     <div style="flex: 1;">
-                        <img src="aufbau_devbox.png" alt="Diagramm einer DevBox auf einer virtuellen Maschine, die auf einem Betriebssystem auf Hardware läuft" width="100%">
+                        <img src="aufbau_devbox.png" alt="Diagramm einer DevBox auf einer virtuellen Maschine, die auf einem Betriebssystem auf Hardware läuft">
                     </div>
-                    <div style="flex: 1; margin-left: 20px;">
+                    <div style="font-size:0.75em; margin-top:0px; flex: 1; margin-left: 20px;">
                         <p class="fragment fade-up"><b>Anpassung: </b>DevBox-Anpassung für ein Repository obliegt dem Nutzer.</p>
                         <p class="fragment fade-up"><b>Tools- und Skriptkonfiguration: </b>Spezifisch für DevBox, nicht für das Repository.</p>
                         <p class="fragment fade-up"><b>Tool-Verantwortung: </b>Nutzer gewährleistet korrekte Tool-Versionen für das Repository.</p>
                         <p class="fragment fade-up"><b>Repositoriumsfunktionalitäten: </b>Funktionalitäten müssen vom Nutzer installiert und getestet werden.</p>
+                        <p class="fragment">=>  
+                            Die DevBox erfordert vom Nutzer individuelle Anpassungen und spezifische Tool-Konfigurationen. Nutzer sind verantwortlich für die korrekte Einrichtung und das Testen der Repositoriumsfunktionalitäten, was den Einstieg erschweren kann.
+                        </p>
                     </div>
                 </div>
-                <p class="fragment">=>  
-                    Die DevBox erfordert vom Nutzer individuelle Anpassungen und spezifische Tool-Konfigurationen. Nutzer sind verantwortlich für die korrekte Einrichtung und das Testen der Repositoriumsfunktionalitäten, was den Einstieg erschweren kann.
-                </p>
+
 
             </section>
             <section>
@@ -81,16 +84,17 @@
                     <div style="flex: 1;">
                         <img src="aufbau_devcontainer.png" alt="Diagramm eines DevContainers auf einem Docker-Engine, der auf einem Betriebssystem auf Hardware läuft" width="100%">
                     </div>
-                    <div style="flex: 1; margin-left: 20px;">
+                    <div style="font-size:0.75em; margin-top:0px; flex: 1; margin-left: 20px;">
                         <p class="fragment fade-up"><b>Anpassung: </b>Anpassung der DevContainer erfolgt durch den Ersteller des Repos.</p>
                         <p class="fragment fade-up"><b>Tools- und Skriptkonfiguration: </b>Vom Ersteller für das Repository konfiguriert.</p>
                         <p class="fragment fade-up"><b>Einheitliches Setup: </b>Alle Nutzer nutzen dasselbe, getestete Setup.</p>
                         <p class="fragment fade-up"><b>Repositoriumsfunktionalitäten: </b>Funktionalitäten sind für den DevContainer getestet und funktionstüchtig.</p>
+                        <p class="fragment">=>  
+                            Die DevContainer bieten eine vom Ersteller vorgegebene, einheitliche Konfiguration. Dies erleichtert den Einstieg, da Nutzer ein getestetes und sofort einsatzbereites Setup vorfinden und sich nicht um individuelle Anpassungen kümmern müssen.
+                        </p>
                     </div>
                 </div>
-                <p class="fragment">=>  
-                    Die DevContainer bieten eine vom Ersteller vorgegebene, einheitliche Konfiguration. Dies erleichtert den Einstieg, da Nutzer ein getestetes und sofort einsatzbereites Setup vorfinden und sich nicht um individuelle Anpassungen kümmern müssen.
-                </p>
+                
             </section>
             
             <section>
@@ -122,49 +126,51 @@
                         <td>Funktionalitäten sind sofort einsatzbereit und getestet, was die Benutzerfreundlichkeit steigert</td>
                     </tr>
                 </table>
-                <div style="height: 3em;"></div>
-                <p class="fragment">=>  
-                    Der Nutzer trifft auf ein vorkonfiguriertes Setup und kann sofort starten. Dies steigert die Benutzerfreundlichkeit und reduziert Fehlerquellen.</p>
+                <div style="font-size:0.75em; margin-top:0px; flex: 1; margin-left: 20px;">
+                    <p class="fragment">=>  
+                        Der Nutzer trifft auf ein vorkonfiguriertes Setup und kann sofort starten. Dies steigert die Benutzerfreundlichkeit und reduziert Fehlerquellen.
+                    </p>
+                </div>
             </section>
-            
+
             <section>
                 <h3>Nutzerkreis und Eigenschaften der DevBox</h3>
                 <div style="display: flex;">
                     <div style="flex: 1;">
                         <img src="nutzerkreis_devbox.png" alt="Diagramm von Nutzern, die die DevBox verwenden" width="100%">
                     </div>
-                    <div style="flex: 1; margin-left: 20px;">
+                    <div style="font-size:0.75em; margin-top:0px; flex: 1; margin-left: 20px;">
                         <p class="fragment fade-up"><b>Zielgruppe: </b>Ausschließlich für Gematik-Mitarbeiter konzipiert.</p>
                         <p class="fragment fade-up"><b>Technische Anforderungen: </b>Technisch versierte Nutzer für die Konfiguration des Setups erforderlich.</p>
                         <p class="fragment fade-up"><b>Kooperationsmöglichkeiten: </b>Eingeschränkt auf interne Mitarbeiter.</p>
+                        <p class="fragment">=>  
+                            Die DevBox richtet sich primär an Gematik-Mitarbeiter und erfordert für die Einrichtung technische Kenntnisse, was ihren Einsatzbereich auf Nutzer mit entsprechender Expertise beschränkt.
+                        </p>
                     </div>
                 </div>
-                <p class="fragment">=>  
-                    Die DevBox richtet sich primär an Gematik-Mitarbeiter und erfordert für die Einrichtung technische Kenntnisse, was ihren Einsatzbereich auf Nutzer mit entsprechender Expertise beschränkt.
-                </p>
             </section>
-            
-            
+
             <section>
                 <h3>Nutzerkreis und Eigenschaften der DevContainer</h3>
                 <div style="display: flex;">
                     <div style="flex: 1;">
                         <img src="nutzerkreis_devcontainer.png" alt="Diagramm von Nutzern, die den DevContainer verwenden" width="100%">
                     </div>
-                    <div style="flex: 1; margin-left: 20px;">
+                    <div style="font-size:0.75em; margin-top:0px; flex: 1; margin-left: 20px;">
                         <p class="fragment fade-up"><b>Zielgruppe: </b>Verwendung innerhalb der Gematik sowie von Industrie und Partnern möglich.</p>
                         <p class="fragment fade-up"><b>Technische Anforderungen: </b>Reduzierte technische Hürden durch DevContainer mit Docker-Setup. Keine Eintrittsbarrieren bei Nutzung der Codespaces.</p>
                         <p class="fragment fade-up"><b>Kooperationsmöglichkeiten: </b>Erleichtert die Kooperation bei Spezifikationen, Tools und POCs, minimiert Konfigurationshürden.</p>
+                        <p class="fragment">=>  
+                            DevContainer erweitern den Nutzerkreis über Gematik-Mitarbeiter hinaus und bieten durch einfache Zugänglichkeit und geringe Konfigurationshürden eine verbesserte Basis für Kooperationen.
+                        </p>
                     </div>
                 </div>
-                <p class="fragment">=>  
-                    DevContainer erweitern den Nutzerkreis über Gematik-Mitarbeiter hinaus und bieten durch einfache Zugänglichkeit und geringe Konfigurationshürden eine verbesserte Basis für Kooperationen.
-                </p>
+                
             </section>
             
             <section>
                 <h3>Vergleich des Nutzerkreises: DevBox vs. DevContainer</h3>
-                <table>
+                <table style="font-size:0.7em; margin-top:0px;">
                     <tr>
                         <th>Kategorie</th>
                         <th>DevBox</th>
@@ -187,6 +193,7 @@
                     </tr>
                 </table>
             </section>
+
             <section>
                 <h2>Weitere Vorteile von DevContainern</h2>
                 <div style="display: flex;">
@@ -194,7 +201,7 @@
                         <!-- Hier können Sie das Logo von DevContainern einfügen -->
                         <img src="intro2.png" alt="DevContainer Logo" width="100%">
                     </div>
-                    <div style="flex: 1; margin-left: 20px;">
+                    <div style="font-size:0.75em; margin-top:0px; flex: 1; margin-left: 20px;">
                         <ul>
                             <li>Automatisches Routing der Ports erleichtert das Netzwerksetup</li>
                             <li>Flexibel einsetzbar mit und ohne Gematik-VPN</li>
@@ -205,13 +212,12 @@
                         </ul>
                     </div>
                 </div>
-                <p class="fragment">=>  
-                    DevContainer bieten eine Vielzahl von Vorteilen, darunter vereinfachtes Netzwerksetup, Flexibilität, breite Auswahlmöglichkeiten, benutzerfreundliches Interface, einheitliche Entwicklungsumgebungen und eine verbesserte Integration mit GitHub.
-                </p>
+               
             </section>
+
             <section>
-                <h2>Beispiele für die Verwendung von DevContainern bei Gematik</h2>
-                <div style="display: flex; flex-direction: column; gap: 20px;">
+                <h2>Beispiele für die Verwendung von DevContainern bei der Gematik</h2>
+                <div style="font-size:0.75em; margin-top:0px; flex: 1; margin-left: 20px;">
                    
                     <div style="flex: 1;">
                         <a href="https://github.com/SvenSommer/poc-epa-medication">Proof of Concept: ePA Medikationsprozess</a>
@@ -222,7 +228,7 @@
                         </ul>
                         <p><b>Fazit:</b> POC kann von jedem Entwickler mit einem Klick gestartet werden, was eine hohe Effizienz und Benutzerfreundlichkeit gewährleistet.</p>
                     </div>
-                    <div style="flex: 1; margin-left: 20px;">
+                    <div style="flex: 1;">
                         <a href="https://github.com/gematik/spec-epa-medication">Spezifikation: ePA FHIR Profile</a>
                         <ul>
                             <li>DevContainer ermöglichte eine vereinfachte Kooperation mit Partner "Gefyra"</li>
@@ -233,21 +239,18 @@
                     </div>
                 </div>
             </section>
-            
-            
-            
+
             <section>
                 <h2>Schlussfolgerung</h2>
-                <p>Die Einführung von DevContainern stellt eine entscheidende Verbesserung unserer Entwicklungsprozesse dar, indem sie Effizienz und Agilität in den Vordergrund stellt.</p>
-                <ul>
-                    <li>Die Herausforderungen mit der aktuellen DevBox zeigen die Notwendigkeit für eine vereinheitlichte, nutzerfreundliche Lösung</li>
-                    <li>DevContainer bieten eine zukunftsorientierte Entwicklungsumgebung, die Effizienz und Produktivität steigert</li>
-                    <li>Wir stehen vor der Gelegenheit, unsere technologische Landschaft zu modernisieren und unsere Teamdynamik zu verbessern</li>
-                    <li>Ich lade alle Entscheidungsträger ein, sich dieser innovativen Veränderung anzuschließen und sie aktiv zu unterstützen</li>
-                </ul>
-                <aside class="speaker-notes">
-                    Heben Sie die Bedeutung der Einführung von DevContainern hervor und wie sie die Arbeitsweise bei Gematik revolutionieren kann. Betonen Sie die Dringlichkeit und den Nutzen dieser Veränderung für das gesamte Team.
-                </aside>
+                <div style="font-size:0.75em; margin-top:0px; flex: 1; margin-left: 20px;">
+                    <p>Die Einführung von DevContainern stellt eine entscheidende Verbesserung unserer Entwicklungsprozesse dar, indem sie Effizienz und Agilität in den Vordergrund stellt.</p>
+                    <ul>
+                        <li>Die Herausforderungen mit der aktuellen DevBox zeigen die Notwendigkeit für eine vereinheitlichte, nutzerfreundliche Lösung.</li>
+                        <li>DevContainer bieten eine zukunftsorientierte Entwicklungsumgebung, die Effizienz und Produktivität steigert.</li>
+                        <li>Wir stehen vor der Gelegenheit, unsere technologische Landschaft zu modernisieren und unsere Teamdynamik zu verbessern.</li>
+                    </ul>
+                    <p>Ich lade alle Entscheidungsträger ein, sich dieser innovativen Veränderung anzuschließen und sie aktiv zu unterstützen.</p>
+                </div>
             </section>
         </div>
     </div>
