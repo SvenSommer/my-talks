@@ -55,128 +55,99 @@
             <section>
                 <h3>Aufbau der Devbox Architektur</h3>
                 <img src="aufbau_devbox.png"
-                    alt="Diagram of a DevBox running on top of a Virtual Machine running on top of an Operating System on top of Hardware">
+                    alt="Diagram of a DevBox running on top of a Virtual Machine running on top of an Operating System on top of Hardware" width="50%">
             </section>
             <section>
-                <h3>Konsequenzen der Devbox Architektur</h3>
-                <img src="aufbau_devbox.png"
-                    alt="Diagram of a DevBox running on top of a Virtual Machine running on top of an Operating System on top of Hardware"
-                    width="30%">
+                <h3>Konsequenzen der DevBox-Architektur</h3>
+                <img src="aufbau_devbox.png" alt="Diagramm einer DevBox auf einer virtuellen Maschine, die auf einem Betriebssystem auf Hardware läuft" width="30%">
                 <ul>
-                    <li>spezifische Anpassung der Devbox für den Usecase liegt beim <b>Nutzer</b></li>
-                    <li>Tools- und Script(versionen) werden für eine <b>Devbox</b>, nicht für das jeweiligen Repo
-                        konfiguriert.</li>
-                    <li>Der <b>Nutzer</b> muss sicherstellen, das er das Repo mit den richtigen Tools in der richtigen
-                        Version bespielt.</li>
-                    <li>Funktionalitäten des Repositories laufen nicht direkt, sondern der <b>Nutzer</b> muss diese erst
-                        installieren und testen.</li>
+                    <li>Spezifische Anpassung der DevBox für den jeweiligen Anwendungsfall liegt beim Nutzer</li>
+                    <li>Tools- und Skriptversionen werden für eine DevBox, nicht für das jeweilige Repository konfiguriert</li>
+                    <li>Der Nutzer muss sicherstellen, dass er das Repository mit den richtigen Tools in der passenden Version verwendet</li>
+                    <li>Funktionalitäten des Repositories sind nicht direkt verfügbar, sondern müssen vom Nutzer installiert und getestet werden</li>
                 </ul>
             </section>
             <section>
-                <h3>Aufbau der Devcontainer Architektur</h3>
-                <img src="aufbau_devcontainer.png"
-                    alt="Diagram of a DevContainer running on top of a Docker engine running on top of an Operating System on top of Hardware">
+                <h3>Aufbau der DevContainer-Architektur</h3>
+                <img src="aufbau_devcontainer.png" alt="Diagramm eines DevContainers auf einem Docker-Engine, der auf einem Betriebssystem auf Hardware läuft">
             </section>
             <section>
-                <h3>Konsequenzen der Devcontainer Architektur</h3>
-                <img src="aufbau_devcontainer.png"
-                    alt="Diagram of a DevContainer running on top of a Docker engine running on top of an Operating System on top of Hardware"
-                    width="30%">
+                <h3>Konsequenzen der DevContainer-Architektur</h3>
+                <img src="aufbau_devcontainer.png" alt="Diagramm eines DevContainers auf einem Docker-Engine, der auf einem Betriebssystem auf Hardware läuft" width="30%">
                 <ul>
-                    <li>spezifische Anpassung der Devcontainer für den Usecase liegt beim <b>Ersteller</b> des Repos
-                    </li>
-                    <li>Tools und Script wurden vom <b>Ersteller</b> für das Repo konfiguriert.</li>
-                    <li>Alle Benutzer nutzen das selbe (getestete) Setup.</li>
-                    <li>Funktionalitäten des Repositories (sollten) für den devcontainer <b>gestestet und
-                            funktionstüchtig</b> sein.</li>
+                    <li>Spezifische Anpassung der DevContainer für den jeweiligen Anwendungsfall liegt beim Ersteller des Repos</li>
+                    <li>Tools und Skripte wurden vom Ersteller für das Repository konfiguriert</li>
+                    <li>Alle Benutzer nutzen dasselbe (getestete) Setup</li>
+                    <li>Funktionalitäten des Repositories sollten für den DevContainer getestet und funktionstüchtig sein</li>
                 </ul>
             </section>
             <section>
-                <h3>direkter Vergleich Aufbau Devbox vs. Devcontainer</h3>
+                <h3>Direkter Vergleich: Aufbau DevBox vs. DevContainer</h3>
                 <table>
                     <tr>
-                        <th>Devbox</th>
-                        <th>Devcontainer</th>
+                        <th>DevBox</th>
+                        <th>DevContainer</th>
                     </tr>
                     <tr>
-                        <td>spezifische Anpassung der Devbox für den Usecase liegt beim <b>Nutzer</b></td>
-                        <td>spezifische Anpassung der Devcontainer für den Usecase liegt beim <b>Ersteller</b> des Repos
-                        </td>
+                        <td>Spezifische Anpassung der DevBox für den Anwendungsfall liegt beim Nutzer</td>
+                        <td>Spezifische Anpassung der DevContainer für den Anwendungsfall liegt beim Ersteller des Repos</td>
                     </tr>
                     <tr>
-                        <td>Tools- und Script(versionen) werden für eine <b>Devbox</b>, nicht für das jeweiligen Repo
-                            konfiguriert.</td>
-                        <td>Tools und Script wurden vom <b>Ersteller</b> für das Repo konfiguriert.</td>
+                        <td>Tools- und Skriptversionen werden für eine DevBox, nicht für das jeweilige Repo konfiguriert</td>
+                        <td>Tools und Skripte wurden vom Ersteller für das Repo konfiguriert</td>
                     </tr>
                     <tr>
-                        <td>Der <b>Nutzer</b> muss sicherstellen, das er das Repo mit den richtigen Tools in der
-                            richtigen Version bespielt.</td>
-                        <td>Alle Benutzer nutzen das selbe (getestete) Setup.</td>
+                        <td>Der Nutzer muss sicherstellen, dass er das Repo mit den richtigen Tools in der passenden Version verwendet</td>
+                        <td>Alle Benutzer nutzen dasselbe (getestete) Setup</td>
                     </tr>
                     <tr>
-                        <td>Funktionalitäten des Repositories laufen nicht direkt, sondern der <b>Nutzer</b> muss diese
-                            erst installieren und testen.</td>
-                        <td>Funktionalitäten des Repositories (sollten) für den devcontainer <b>gestestet und
-                                funktionstüchtig</b> sein.</td>
+                        <td>Funktionalitäten des Repositories sind nicht direkt verfügbar, sondern müssen vom Nutzer installiert und getestet werden</td>
+                        <td>Funktionalitäten des Repositories sollten für den DevContainer getestet und funktionstüchtig sein</td>
                     </tr>
                 </table>
             </section>
             <section>
-                <h4>Nutzerkreis der Devbox</h4>
-                <img src="nutzerkreis_devbox.png" alt="Diagramm of users using the devbox" width="50%">
+                <h4>Nutzerkreis der DevBox</h4>
+                <img src="nutzerkreis_devbox.png" alt="Diagramm von Nutzern, die die DevBox verwenden" width="50%">
                 <ul>
-                    <li>Die Devbox ist Auschschließlich für Gematik Mitarbeiter konzipiert.</li>
-                    <li>Power-Notebook User steht die DevBox-Setup konfigurieren.</li>
-                    <li>technisch "versierte" können Devboxen nutzen.</li>
+                    <li>Die DevBox ist ausschließlich für Gematik-Mitarbeiter konzipiert</li>
+                    <li>Technisch versierte Nutzer können die DevBox-Setup konfigurieren</li>
                 </ul>
             </section>
             <section>
-                <h4>Nutzerkreis der Devcontainer</h4>
-                <img src="nutzerkreis_devcontainer.png" alt="Diagramm of users using the devcontainer" width="40%">
+                <h4>Nutzerkreis der DevContainer</h4>
+                <img src="nutzerkreis_devcontainer.png" alt="Diagramm von Nutzern, die den DevContainer verwenden" width="40%">
                 <ul>
-                    <li>Die Devcontainer können innerhalb der Gematik als auch von der Industrie und Partnern genutzt werden.</li>
-                    <li>Bei Verwendung der Codespaces gibt es keine teschnische Eintrittshürde mehr </li>
-                    <li>Konfigurationshürden bei der Kooperation bei Spezifikationen, Tools und POCs minimiert.</li>
+                    <li>Die DevContainer können innerhalb der Gematik sowie von Industrie und Partnern genutzt werden</li>
+                    <li>Bei Verwendung der Codespaces gibt es keine technische Eintrittshürde mehr</li>
+                    <li>Konfigurationshürden bei der Kooperation in Bezug auf Spezifikationen, Tools und POCs werden minimiert</li>
                 </ul>
             </section>
             <section>
-                <h2>weitere Vorteile</h2>
+                <h2>Weitere Vorteile</h2>
                 <ul>
                     <li>Netzwerksetup: Automatisches Routing der Ports</li>
-                    <li>Weniger Konfiguration: Funktioniert mit ohne ohne VPN der Gematik</li>
-                    <li>Größere Vielfalt: Größere Auswahl an <a
-                            href="https://github.com/devcontainers/images">spezifischen Containern</a> </li>
-                    <li>Einfaches Setup: UI gestütztes Anlegen in VSCode für neue Container</li>
-                    <li>Ende des "Doesn't work on my machine"-Problems: Vereinheitlichte Entwicklungsumgebung.</li>
-                    <li>Schnellere Integration mit GitHub: Niedrigere Einstiegshürden, erleichtert rasche Änderungen.
-                    </li>
-                    <li>Nutzerfreundlichkeit: Vereinfacht die Arbeit für weniger technisch versierte Kollegen.</li>
+                    <li>Weniger Konfiguration: Funktioniert mit und ohne VPN von Gematik</li>
+                    <li>Größere Vielfalt: Größere Auswahl an spezifischen Containern (Link: <a href="https://github.com/devcontainers/images">DevContainer-Images</a>)</li>
+                    <li>Einfaches Setup: UI-gestütztes Anlegen neuer Container in VSCode</li>
+                    <li>Ende des "Doesn't work on my machine"-Problems: Vereinheitlichte Entwicklungsumgebung</li>
+                    <li>Schnellere Integration mit GitHub: Niedrigere Einstiegshürden, erleichterte schnelle Änderungen</li>
+                    <li>Nutzerfreundlichkeit: Vereinfacht die Arbeit für weniger technisch versierte Kollegen</li>
                 </ul>
             </section>
-
-            <!-- Folie 7: Schlussfolgerung -->
             <section>
                 <h2>Abschluss und Ausblick</h2>
-                <p>Die Einführung von .devcontainer stellt eine entscheidende Verbesserung unserer Entwicklungsprozesse
-                    dar, indem sie Effizienz und Agilität in den Vordergrund stellt.</p>
+                <p>Die Einführung von DevContainern stellt eine entscheidende Verbesserung unserer Entwicklungsprozesse dar, indem sie Effizienz und Agilität in den Vordergrund stellt.</p>
                 <ul>
-                    <li>Die Herausforderungen mit der aktuellen DevBox zeigen die Notwendigkeit für eine
-                        vereinheitlichte, nutzerfreundliche Lösung.</li>
-                    <li>.devcontainer bietet eine zukunftsorientierte Entwicklungsumgebung, die Effizienz und
-                        Produktivität steigert.</li>
-                    <li>Wir stehen vor der Gelegenheit, unsere technologische Landschaft zu modernisieren und unsere
-                        Teamdynamik zu verbessern.</li>
-                    <li>Ich lade alle Entscheidungsträger ein, sich dieser innovativen Veränderung anzuschließen und sie
-                        aktiv zu unterstützen.</li>
+                    <li>Die Herausforderungen mit der aktuellen DevBox zeigen die Notwendigkeit für eine vereinheitlichte, nutzerfreundliche Lösung</li>
+                    <li>DevContainer bieten eine zukunftsorientierte Entwicklungsumgebung, die Effizienz und Produktivität steigert</li>
+                    <li>Wir stehen vor der Gelegenheit, unsere technologische Landschaft zu modernisieren und unsere Teamdynamik zu verbessern</li>
+                    <li>Ich lade alle Entscheidungsträger ein, sich dieser innovativen Veränderung anzuschließen und sie aktiv zu unterstützen</li>
                 </ul>
                 <aside class="speaker-notes">
-                    Heben Sie die Bedeutung der Einführung von .devcontainer hervor und wie sie die Arbeitsweise in der
-                    Gematik revolutionieren kann. Betonen Sie die Dringlichkeit und den Nutzen dieser Veränderung für
-                    das gesamte Team.
+                    Heben Sie die Bedeutung der Einführung von DevContainern hervor und wie sie die Arbeitsweise bei Gematik revolutionieren kann. Betonen Sie die Dringlichkeit und den Nutzen dieser Veränderung für das gesamte Team.
                 </aside>
             </section>
-
-
         </div>
     </div>
 
